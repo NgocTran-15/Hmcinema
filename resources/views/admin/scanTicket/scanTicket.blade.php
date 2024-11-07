@@ -113,7 +113,7 @@
                     returnBarcodeImage: true,
                     onError: onScannerError,
                     barcodeFormats: barcodeFormats,
-                    preferredCamera: 'DroidCam Source 2'
+                    preferredCamera: 'DroidCam Source 3'
                 };
 
                 try {
