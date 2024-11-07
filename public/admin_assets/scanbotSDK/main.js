@@ -35,7 +35,7 @@ window.onload = async () => {
                     Error_Noise: "Please move the document to a clear surface.",
                 },
             },
-            preferredCamera: 'camera2 0, facing back'
+            preferredCamera: 'camera3 0, facing back'
         };
 
         try {
@@ -155,7 +155,7 @@ window.onload = async () => {
             returnBarcodeImage: true,
             onError: onScannerError,
             barcodeFormats: barcodeFormats,
-            preferredCamera: 'camera2 0, facing back'
+            preferredCamera: 'camera3 0, facing back'
         };
 
         try {
@@ -175,7 +175,7 @@ window.onload = async () => {
             containerId: Config.mrzScannerContainerId(),
             onMrzDetected: onMrzDetected,
             onError: onScannerError,
-            preferredCamera: 'camera2 0, facing back'
+            preferredCamera: 'camera3 0, facing back'
         };
 
         try {
@@ -195,7 +195,7 @@ window.onload = async () => {
             onError: onScannerError,
             ocrResolutionLimit: 400,
             supportedLanguages: ['eng', 'deu'],
-            preferredCamera: 'camera2 0, facing back'
+            preferredCamera: 'camera3 0, facing back'
         };
 
         textDataScanner = await scanbotSDK.createTextDataScanner(config);
